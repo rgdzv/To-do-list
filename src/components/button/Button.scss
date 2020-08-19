@@ -1,0 +1,36 @@
+.btn {
+  width: 35px;
+  height: 35px;
+  border: none;
+  border-radius: 50%;
+  background: #4B90F1;
+  outline: none;
+  color: #ffffff;
+  padding: 5px;
+  transition: background .2s linear;
+
+  &:hover {
+    background: lighten(#23569c, 10%);
+  }
+  
+  &:active {
+    box-shadow: inset 0px 0px 20px #23569c, 
+  }
+
+  &--filters {
+    width: auto;
+    height: auto;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    margin-right: 10px;
+
+    &:focus {
+      background: darken(#4B90F1, 30%);
+      border-color: #4B90F1;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.toDoItem {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin-bottom: 5px;
+
+  img {
+    width: 16px;
+    height: 16px;
+  }
+
+  .done,
+  .undone {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+  .done {
+    opacity: 0.5;
+  }
+
+  .toDoBlock {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .remove {
+      opacity: 0.5;
+      transition: opacity .2s linear;
+      cursor: pointer;
+  
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
